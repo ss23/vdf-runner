@@ -1,0 +1,4 @@
+github.com/galaco/KeyValues v1.4.1 h1:g50MJ4Ephqe1EqG8WB2S55Zye1JFnjOsHP5TwIKM7Ao=
+github.com/galaco/KeyValues v1.4.1/go.mod h1:00r0hZpLlOBIHehyWAgUngjKPoo3vCVP25BgWLwOP7E=
+golang.org/x/sys v0.0.0-20201204225414-ed752295db88 h1:KmZPnMocC93w341XZp26yTJg8Za7lhb2KhkYmixoeso=
+golang.org/x/sys v0.0.0-20201204225414-ed752295db88/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
