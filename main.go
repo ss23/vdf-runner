@@ -61,7 +61,7 @@ func main() {
 	}
 
 	for _, child := range children {
-		switch child.Key() {
+		switch strings.ToLower(child.Key()) {
 		case "registry":
 			fmt.Println("Running registry install code...")
 			runRegistry(child)
@@ -158,11 +158,11 @@ func getRegistryPath(path string) (registry.Key, string) {
 	// Begin by splitting off the first component and match that to an already open registry key
 	var k registry.Key
 	keys := strings.SplitN(path, "\\", 2)
-	switch keys[0] {
+	switch strings.ToLower(keys[0]) {
 	case "hkey_local_machine":
 		k = registry.LOCAL_MACHINE
 	default:
-		panic("Unknown registry key specified")
+		panic("Unknown registry key specified:" + keys[0])
 	}
 
 	return k, keys[1]
